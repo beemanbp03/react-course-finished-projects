@@ -1,13 +1,18 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-const initialUiState = {};
-
 const uiSlice = createSlice({
     name: 'ui',
-    initialState: { cartIsVisible: false },
+    initialState: { cartIsVisible: false, notification: null },
     reducers: {
         toggle(state, action) {
             state.cartIsVisible = !state.cartIsVisible; //Not really mutating the state here, the state is being copied and returned behind the scenes
+        },
+        showNotification(state, action) {
+            state.notification = { 
+                status: action.payload.status, 
+                title: action.payload.title, 
+                message: action.payload.message 
+            }
         }
     }
 });
