@@ -1,5 +1,5 @@
 # React - The Completed Guide course - by Maximilian Schwarzmüller
-### all projects are separated into different branches
+### [***all projects are separated into different branches***]
 
 
 ## What's in this course?
